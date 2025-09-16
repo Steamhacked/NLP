@@ -36,3 +36,11 @@ Causesku is dead -> entailment
 Causesku is alive -> contradiction
 Causesku is a clown -> irrelevant
 
+NLU -> Natural Language Understanding -> To interepret and extract meaning (Make sense out of input)
+NLG -> Natural Language Generation -> To generate text (Make sensible output)
+
+Generative tasks:
+Machine Translation
+Question Answering (Generative)
+Dialogue System
+
