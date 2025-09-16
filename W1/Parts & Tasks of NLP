@@ -1,0 +1,38 @@
+Granularity:
+
+Characther -> Morpheme -> Word -> Phrase -> Clause -> Sentence -> Paragraph -> Document -> Corpus -> Collection
+
+(Not necessarily text only)
+
+Analysis Levels:
+
+Lexical -> Word Meaning 
+Syntactic -> Analyze phrase / clause structure
+Semantic -> How meanings combine in phrases/sentences
+Discourse -> Relations between sentences
+Pragmatic -> Meaning in context, speaker intention
+
+Lexical Analysis:
+Tokenization -> split text into meaningful units, different levels of granularity
+
+Syntactic Analysis:
+Part-of-Speech tagging -> labeling each word in text with the role of Part-of-Speech (helps machine understand word's function in sentence)
+Dependency Parsing -> identify grammatical realtionships between words (show relationships that hold the sentence together)
+
+Semantic Analysis: 
+Word Sense Disambiguation -> identify the correct meaning of a word given context
+Named Entity Recognition -> identify named entities in unstructured text and classify them into predefined categories 
+
+Discourse Analysis:
+Coreference Resolution -> identify different mentions that refer to the same entity in text (entities can be named entities, noun phrases, pronouns, etc.)
+
+Pragmatic Analysis:
+Textual Entailment / Natural Language Inference -> determine the inference relationship between two pieces of text
+
+e.g.:
+
+Causesku was executed:
+Causesku is dead -> entailment
+Causesku is alive -> contradiction
+Causesku is a clown -> irrelevant
+
