@@ -1,0 +1,10 @@
+General framework: 
+Create a function to map an input X to an output Y, where X & Y -> involve language
+
+Non-machine learning sentiment analysis: Assign each word a score, assumes certain (simple) sentence structure
+ML Method -> Learn from data
+
+Framework:
+1) Formulate NLP Task
+2) Potential Models & Algorithms
+3) Knowledge about Human Languages
