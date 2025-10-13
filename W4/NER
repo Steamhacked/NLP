@@ -1,0 +1,4 @@
+Tokens Trade-Off:
+
+More tokens -> greater complexity of the possible text to tokenize (more informaiton to collect) (, but also more computationally demanding)
+
