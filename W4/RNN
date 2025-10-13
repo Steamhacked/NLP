@@ -1,0 +1,11 @@
+Pros:
+
+> Input of any length
+> Computation for a given step requires use of information many steps back (allows to capture longer dependencies)
+> Model size does not increase for longer input
+> Same weights applied over every timestep, symmetrical in input processing
+
+Cons:
+
+> Recurrent computation is slow
+> Difficult to access information many steps back (in practice)
