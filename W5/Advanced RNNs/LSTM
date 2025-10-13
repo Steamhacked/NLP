@@ -1,1 +1,23 @@
+LSTM - LongShortTermMemory,
+
+What does it solve and how?
+
+Vanishing Gradient, by the means of: Π(j=k+1, t) δh_j/δh_j-1 = Π(j=k+1, t) σ'W_h
+
+σ -> Sigmoid "Gate" ε [0,1] , 0 -> pass no information, 1 -> pass all the information
+
+States:
+> Hidden State -> 
+> Cell State -> stores long-term information (memory, modified via gates)
+
+Gates:
+> Forget Gate -> based on the past hidden states and current input, selects information from past cell to forget (filter)
+  > f_t = σ(W_f*[h_t-1, x_t] + b_f)
+  > C_t = f_t*C_t
+> Input Gate -> based on the past hidden states and current input, selects information from temporary cell state to memorize (write)
+  > i_t = σ(W_i*[h_t-1, x_t] +b_f)
+  > C_t = tanh(W_c*[h_t-1, x_t] + b_C)
+> Output Gate -> based on the past hidden states and current input, selects information from the current cell state as current hidden state
+  > o_t = σ(W_o*[h_t-1, x_t] + b_o)
+  > h_t = o_t * tanh(C_t)
 
