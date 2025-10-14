@@ -1,0 +1,7 @@
+Final encoding -> single vector representation of the sequence provided, which may not necessarily have necessary information
+
+Attention -> conceptually attempts to highlight important information to resolve such bottleneck,
+
+Lookup table: table of keys that map to values, the query matches one of the keys, returning its value
+
+Attention: 
