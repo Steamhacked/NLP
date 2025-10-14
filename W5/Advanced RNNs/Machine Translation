@@ -1,0 +1,31 @@
+LM: Unconditional: probability of a sentence; Conditional: probability given context c
+
+Earliest to Latest: 
+Rule-based -> Oversimplified, fails to consider syntax (and many other specifics)
+Statistical -> Learn probabilistic model and find P(x|y) x-> target language, very complex and resource demanding
+Neural -> :D
+
+How?
+> Encoder RNN encodes source sentence and final hidden state is provided to the decoder RNN
+> Decoder RNN uses final state of encoder RNN as an initial state and uses it to generate sentence in target language
+
+If input and output are sequences -> "Seq2Seq"
+
+Greedy Decoding -> generate the word with the highest probability at each time step
+> Not very effective (only considers p(w_t|w_1:t-1))
+> Unable to fix errors 
+
+How to solve it?
+
+Exhaustive search decoding -> pick the most possible sequence, at each step consider all possibilities
+
+Beam search decoding -> downsize to k most possible sequences at each time step, not guaranteed to find the best solution, but is a lot more efficient, stops either when reaching predefined timestep T
+or there is at least n completed hypotheses (where n is predefined cutoff) [The other two stop when reaching hypothesis producing END, in case of beam decoding, carry on and explore other hypotheses]
+
+Eval:
+
+BLEU -> BiLingual Evaluation Understudy -> Compute similarity score based on:
+N-gram precision + penalty BP for too short system translations, comparing machine translation with one or more human-translated sentences
+BLEU is not always robust -> a good translation can get poor BLEU score due to low n-gram overlap with human translation
+Machine Translation is an ongoing problem
+
