@@ -1,0 +1,9 @@
+Transformers advantages:
+  Parallelism
+  Long Range Dependece Capturing
+  Scalable
+
+Disadvantages:
+  Quadratic complexity (time and memory)
+  Training instabilities
+
