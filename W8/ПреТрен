@@ -1,0 +1,7 @@
+Pre-training -> use large amount of data without labels (train to perform language modelling onf a large text, then fine-tune)
+
+Pre-training requirements:
+  Large amount of data
+  High Quality (free from noise, errors, low-quality web content, gramatically correct, accurate, factual)
+  Diversity & Representativeness (cover multiple domains, wide range of writing styles/formats/perspectives, balanced perspectives across cultures, languages and demographics)
+
