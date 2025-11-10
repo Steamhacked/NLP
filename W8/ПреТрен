@@ -7,7 +7,7 @@ Pre-training requirements:
 
 Pre-training 3 types of architecture:
   Encoders ->  Bi-Directional context, can condition on future, challenge: to build strong representations
-  Encoder-Decoder -> 
+  Encoder-Decoder -> encoder - benefits from bidirectional context, 
   Decoders ->
 
 BERT -> Bidirectional Encoder Representations from Transformers:
@@ -17,3 +17,11 @@ BERT -> Bidirectional Encoder Representations from Transformers:
 
   Pre-training: MLM & NSP - trained together, CLS - pre-trained for NSP, other representations trained for MLM
   Fine-tuning: 
+
+  Extensions: RoBERTa -> trained longer, without NSP; SpanBERT -> masks contiguous spans of words for a more robust pre-training
+
+  Pros: Considers both left and right context, captures intricate contextual relationships
+  Cons: not suitable/good at generating open-text from left-to right, one token at a time
+
+
+T5 -> use span corruption: replace different-length spans from the input with unique placeholders, decode out the spans that were removed (implemented in text pre-processing)
