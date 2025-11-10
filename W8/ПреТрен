@@ -5,3 +5,15 @@ Pre-training requirements:
   High Quality (free from noise, errors, low-quality web content, gramatically correct, accurate, factual)
   Diversity & Representativeness (cover multiple domains, wide range of writing styles/formats/perspectives, balanced perspectives across cultures, languages and demographics)
 
+Pre-training 3 types of architecture:
+  Encoders ->  Bi-Directional context, can condition on future, challenge: to build strong representations
+  Encoder-Decoder -> 
+  Decoders ->
+
+BERT -> Bidirectional Encoder Representations from Transformers:
+  Masked Language Modelling -> do LM/similar tasks with a transformer encoder: Mask k% of input words, then predict the masked words (usually k = 15) (for 15% predicted words -> replace 80% with mask, 10% with random token, 10% with leave unchanged)
+
+  Next Sentence Prediction -> understand relationship between two sentences, designed to reduce gap between pre-training and fine-tuning, 
+
+  Pre-training: MLM & NSP - trained together, CLS - pre-trained for NSP, other representations trained for MLM
+  Fine-tuning: 
